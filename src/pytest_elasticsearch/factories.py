@@ -77,6 +77,7 @@ def elasticsearch_proc(executable='/usr/share/elasticsearch/bin/elasticsearch',
     :param str logs_prefix: prefix for log filename
     :param str elasticsearch_logsdir: path for logs.
     :param elasticsearch_logsdir: path for elasticsearch logs
+    :param conf_path: path for elasticsearch configuration
     """
     @pytest.fixture(scope='session')
     def elasticsearch_proc_fixture(request):
